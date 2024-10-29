@@ -6,7 +6,9 @@ public class Managers : MonoBehaviour
     static Managers Instance { get { Init(); return s_instance; } }
 
     InputManager _inputManager = new InputManager();
+    ResourceManager _resourceManager = new ResourceManager();
     public static InputManager InputManager { get { return Instance._inputManager; } }
+    public static ResourceManager ResourceManager { get { return Instance._resourceManager; } }
 
     void Start()
     {
